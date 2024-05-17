@@ -1,0 +1,80 @@
+1. 
+Abstract parts of the solution:
+You might want to use intermediary variables for the numerator and denominator.
+Create a possibility to assess if there are any decimal places are in the current value.
+This might be done by reducing a copy of the value so that the integer portion is zero, so that only the decimal places remain.
+
+Or by converting the double value into an integer and having another double value that is the difference from the first double value and the integer.
+Now check with a certain precision if that remainder is greater than a small value based on the wanted precision.
+If not multiply all values by ten and repeat checking the decimal places.
+
+Language Constructs needed in a solution or have to be understood:
+Arithmetic Operators: *, - or Assignment operators *= and -=
+Comparison operators < or > <= or >=
+Double and Integer Literals, Variables
+while-loop
+Function with passing arguments by value and return of double value
+
+2.
+Here is a detailed Algorithm for the solution:
+For the first variant:
+Create a function named GetDividend that takes a double called dividend as a parameter.
+In the function, use a while loop to keep subtracting 1.0 from the dividend as long as it's greater than or equal to 1.0.
+Return the remaining dividend.
+Initialize a double variable numerator to 0.0 and an integer variable denominator to 1. These will represent the fraction.
+Set the numerator to the input double var.
+Initialize a double variable remainder to 1.0. This variable will store the fractional part of var during each iteration.
+Use a while loop to find the closest fraction approximation:
+a. Inside the loop, call the GetDividend function on var and store the result in the remainder variable.
+b. Check if the remainder is greater than 0.000000001, which is our threshold for precision.
+c. If the remainder is greater than the threshold, it means there are more digits to consider in the fraction. Therefore, multiply the numerator, denominator, and var by 10 to shift to the next digit and continue the loop.
+
+This process continues until the remainder becomes less than the specified threshold, at which point the numerator and denominator represent the closest fraction approximation of the input double var, where the denominator is a power of 10.
+
+Alternatively:
+Create an integer variable that is initialised with the double value. Create another variable of type int and initialise it with 1. Now with the help of another double variable that is initialised as the difference of the first double value minus the integer variable. Now check if this is greater than 0.000000001. If yes than multiply the double value and the integer that is 1 by 10. Repeat the steps above until the check is false. Now you can output the double value and the integer value that is of power 10.
+
+3.
+Here is the solution, but you have to bring the statements into the correct order:
+dividend -= 1.0;
+numerator= var;
+double GetDividend(double dividend)
+remainder = GetDividend(var);
+numerator *=10;
+if(remainder > 0.000000001)
+double remainder = 1.0;
+var *=10;
+while(remainder > 0.000000001)
+denominator *=10;
+return dividend;
+while (dividend >= 1.0)
+double numerator=0.0;
+int denominator =1;
+
+4.
+Solution:
+Outside of Main():
+double GetDividend(double dividend)
+{
+while (dividend >= 1.0) {
+dividend -= 1.0;
+}
+return dividend;
+}
+
+Inside of Main():
+double numerator=0.0;
+    int denominator =1;
+    numerator= var;
+    
+    double remainder = 1.0;
+      while(remainder > 0.000000001)
+    {
+        remainder = GetDividend(var);
+        if(remainder > 0.000000001)
+        {
+            numerator *=10;
+            denominator *=10;
+            var *=10;
+            }
+    } 

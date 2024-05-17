@@ -1,0 +1,39 @@
+Task Text:
+The following C++ program that takes two boolean inputs (1 for true and 0 for false) from the user.
+Complete the functions m_or(), m_xor() and m_nand(), which reconstruct the corresponding logical operators.
+Exclusively use the operators Not(!) and And(&) to reconstruct the operators, any other statement is forbidden. 
+Finished functions can be used.
+
+
+Prefilled Answer Field: 
+#include <iostream>
+using namespace std;
+
+bool m_or(bool a, bool b) {
+    return // Your code goes here.
+}
+
+bool m_nand(bool a, bool b) {
+    return// Your code goes here.
+}
+
+bool m_xor(bool a, bool b) {
+    return// Your code goes here.
+}
+
+int main() {
+    bool input1, input2;
+    cout << "Enter first boolean input (0 for false, 1 for true): \n";
+    cin >> input1;
+    cout << "Enter second boolean input (0 for false, 1 for true): \n";
+    cin >> input2;
+
+    cout << "Logical OR: " << m_or(input1, input2) << endl;
+    cout << "Logical XOR: " << m_xor(input1, input2) << endl;
+    cout << "Logical NAND: " << m_nand(input1, input2) << endl;
+
+    return 0;
+}
+
+
+

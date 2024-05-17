@@ -1,0 +1,42 @@
+1. 
+Abstract parts of the solution:
+Understand that you need to either use bitwise or arithmetic operations to swap values.
+
+Language Constructs needed in a solution or have to be understood:
+Assignment operator =
+Integer datatype
+Some of the arithmatic operators, ^,*,/,-,+
+
+2.
+Here is a detailed Algorithm for the solution:
+Set num1 to the sum of num1 and num2. Set num2 to the difference of num1 and num2. Set num1 to the difference of num1 and num2.
+Same could be done with the product and the quotient.
+Alternatively, perform the following bitwise XOR operations between num1 and num2 three times.
+
+3.
+Here is the solution, but you have to bring the statements into the correct order:
+x = x - y;
+y = x - y;
+x = x + y;
+
+OR
+
+num1 = num1 ^ num2;
+num1 = num1 ^ num2;
+num2 = num1 ^ num2;
+
+4.
+Solution:
+x = x + y;
+y = x - y;
+x = x - y;
+
+OR
+x = x * y;
+y = x / y;
+x = x / y;
+
+OR
+num1 = num1 ^ num2;
+num2 = num1 ^ num2;
+num1 = num1 ^ num2; 

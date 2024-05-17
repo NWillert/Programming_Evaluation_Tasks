@@ -1,0 +1,54 @@
+Task Text:
+Please have a look at the table and the incomplete program.
+Complete the program, so that the outputs correspond to the action based on the given decision table.
+You do not need to write the output yourself, you can copy the output statements from the comment. 
+
+Table
+Rule Number                                             R1  R2  R3  R4  R5  R6  R7  R8
+Condition:
+Is item available for delivery?                         1   1   1   1   0   0   0   0   
+Are the customer details complete?                      1   1   0   0   1   1   0   0                
+Is the creditworthiness of the customer sufficient?     1   0   1   0   1   0   1   0
+Output:
+Delivery with invoice                                   x 
+Delivery by cash on delivery                                x
+Complete the details                                            x   x 
+Not deliverable                                                         x   x   x   x
+
+Examplary Test Cases: 
+Input: 1 1 1
+Expected Output: Delivery with invoice
+
+
+Prefilled Answer Field: 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool inStock, completedDetails, isCreditworthy;
+
+    cout << "Is the item available for delivery? (1/0): \n";
+    cin >> inStock;
+
+    cout << "Are the customer details complete? (1/0): \n";
+    cin >> completedDetails;
+
+    cout << "Is the creditworthiness of the customer good? (1/0): \n";
+    cin >> isCreditworthy;
+    
+    
+    //Your Code Goes Here
+    
+    
+    /*
+        cout << "Delivery with invoice" << endl;
+        cout << "Delivery by cash on delivery" << endl;
+        cout << "Complete the details" << endl;
+        cout << "Not deliverable" << endl; 
+    */
+
+
+    return 0;
+}
+

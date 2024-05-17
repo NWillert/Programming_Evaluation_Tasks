@@ -1,0 +1,226 @@
+Binary +
+The binary plus operator, "+", is used to perform addition on numeric variables.
+    int num1 = 5;
+    int num2 = 3;
+    int sum = num1 + num2; // sum is 8
+
+Binary -
+The binary minus operator, "-", is used to perform subtraction on numeric variables. 
+It subtracts the right-hand operand from the left-hand operand to produce a new value.
+    int num1 = 10;
+    int num2 = 3;
+    int diff = num1 - num2; // diff is 7
+
+Binary *
+The binary multiplication operator, "*", is used to perform multiplication on numeric variables. 
+It multiplies the values of the left-hand and right-hand operands to produce a new value.
+    int num1 = 6;
+    int num2 = 4;
+    int product = num1 * num2; // product is 24
+
+Binary /
+The binary division operator, "/", is used to perform division on numeric variables. 
+It divides the value of the left-hand operand by the value of the right-hand operand to produce a new value.
+    int num1 = 12;
+    int num2 = 4;
+    int quotient = num1 / num2; //quotient is 3
+
+Binary %
+The binary modulus operator, "%", is used to find the remainder when one numeric variable is divided by another. 
+It calculates the remainder of the division operation.
+    int num1 = 10;
+    int num2 = 3;
+    int remainder = num1 % num2; // remainder will be 1
+
+Bitwise Binary &
+The bitwise AND operator, "&", is used to perform a bitwise AND operation on two binary numbers. 
+It returns a result where each bit of the output is the logical AND of the corresponding bits of the input values.
+    int num1 = 12;  // 1100 in binary
+    int num2 = 6;   // 0110 in binary
+    int result = num1 & num2; // result will be 4 (0100 in binary), the bitwise AND of num1 and num2
+
+Bitwise Binary |
+The bitwise OR operator, "|", is used to perform a bitwise OR operation on two binary numbers. 
+It returns a result where each bit of the output is the logical OR of the corresponding bits of the input values.
+    int num1 = 5;  // 0101 in binary
+    int num2 = 3;  // 0011 in binary
+    int result = num1 | num2; // result will be 7 (0111 in binary), the bitwise OR of num1 and num2
+
+Bitwise Binary ^
+The bitwise XOR (exclusive OR) operator, "^", is used to perform a bitwise XOR operation on two binary numbers. 
+It returns a result where each bit of the output is the logical XOR of the corresponding bits of the input values.
+    int num1 = 6;   // 0110 in binary
+    int num2 = 3;   // 0011 in binary
+    int result = num1 ^ num2; // result will be 5 (0101 in binary), the bitwise XOR of num1 and num2
+
+Bitwise Binary <<
+The bitwise left shift operator, "<<", is used to shift the bits of a binary number to the left by a specified number of positions. 
+It effectively multiplies the number by 2 raised to the power of the shift count.
+    int num = 8; // 00001000 in binary
+    int shifted = num << 2; // shifted will be 32 (00100000 in binary), left shift by 2 positions
+
+Bitwise Binary >>
+The bitwise right shift operator, ">>", is used to shift the bits of a binary number to the right by a specified number of positions. 
+It effectively divides the number by 2 raised to the power of the shift count.
+    int num = 32; // 00100000 in binary
+    int shifted = num >> 2; // shifted will be 8 (00001000 in binary), right shift by 2 positions
+
+Assignment =
+The assignment operator, "=", is used to assign a value to a variable. 
+It assigns the value of the right-hand operand to the variable on the left-hand side.
+    int x = 5; // Assigns the value 5 to the variable x 
+
+Assignment +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=
+Assignment operators are used to modify the value of a variable by combining it with another value and assigning the result back to the variable. 
+These operators can be used for various operations such as addition, subtraction, multiplication, division, remainder, and bitwise operations.
+    int num1 = 10;
+    int num2 = 3;
+    num1 X= num2; //Based on X as one of the operations, is the same as num1 = num1 X num2;
+
+Pre/Postfix increment ++
+The increment operators, "++", can be used in both pre-increment and post-increment forms to increase the value of a variable by 1.
+    Pre-increment (++var): In this form, the variable is incremented before its value is used in an expression.
+    Post-increment (var++): In this form, the variable is incremented after its current value is used in an expression.
+
+Pre/Postfix decrement --
+The decrement operators, "--", can be used in both pre-decrement and post-decrement forms to decrease the value of a variable by 1.
+    Pre-decrement (--var): In this form, the variable is decremented before its value is used in an expression.
+    Post-decrement (var--): In this form, the variable is decremented after its current value is used in an expression.
+
+Logical !
+The logical NOT operator, "!", is used to negate a boolean value. 
+It returns the opposite of the input value; true becomes false, and false becomes true.
+
+Logical &&
+The logical AND operator, "&&", is used to combine two boolean expressions. 
+It returns true if both expressions are true; otherwise, it returns false.
+
+Logical ||
+The logical OR operator, "||", is used to combine two boolean expressions. 
+It returns true if at least one of the expressions is true; otherwise, it returns false.
+
+Comparison ==
+The equality operator, "==", is used to compare two values to determine if they are equal. 
+It returns true if the values are equal; otherwise, it returns false.
+
+Comparison !=
+The inequality operator, "!=", is used to compare two values to determine if they are not equal. 
+It returns true if the values are not equal; otherwise, it returns false.
+
+Comparison <
+The less than operator, "<", is used to compare two values to determine if the left-hand value is less than the right-hand value. 
+It returns true if the left value is less; otherwise, it returns false.
+
+Comparison >
+The greater than operator, ">", is used to compare two values to determine if the left-hand value is greater than the right-hand value. 
+It returns true if the left value is greater; otherwise, it returns false.
+
+Comparison <=
+The less than or equal to operator, "<=", is used to compare two values to determine if the left-hand value is less than or equal to the right-hand value. 
+It returns true if the left value is less than or equal; otherwise, it returns false.
+
+Comparison >=
+The greater than or equal to operator, ">=", is used to compare two values to determine if the left-hand value is greater than or equal to the right-hand value. 
+It returns true if the left value is greater than or equal; otherwise, it returns false.
+
+Conditional/Ternery Operator
+The conditional operator, often referred to as the ternary operator, allows you to create a conditional expression that evaluates to one of two values based on a condition.
+    condition ? value_if_true : value_if_false
+
+Type Conversions and Promotions
+Automatic or explicit conversion of one data type to another data type. 
+This can happen when you perform operations involving variables of different data types.
+    int num = 5;
+    double result = num + 2.5; // Implicit conversion: int is promoted to double
+
+Primary Expressions identifier
+An identifier is a name given to a variable, constant, or function that can be used in the code to store or manipulate data.
+
+Primary Expressions integer Literals
+Integer literal is a primary expression that represents a constant integer value. 
+Integer literals are used to directly specify fixed integer values in your code.
+    int decimalInt = 42;// 42 is a integer literal
+
+Primary Expressions character Literals
+A character literal is a primary expression that represents a single character enclosed in single quotes.
+    Enclosed in single quotes, e.g., 'a', '5', or '%'.
+A character literal can represent a single character from the basic character set, which includes letters, digits, punctuation, and some special characters.
+
+Primary Expressions floating point Literals
+A floating-point literal is a primary expression that represents a constant floating-point value. 
+Floating-point literals are used to specify fixed decimal or exponential values in your code.
+    double pi = 3.14159;
+    float smallValue = 0.123f;  // Use 'f' or 'F' suffix for float literals 
+
+Primary Expressions boolean Literals
+A boolean literal is a primary expression that represents one of two possible values: true or false.
+    bool isTrue = true;
+    bool isFalse = false;
+
+Arithmetic Type bool
+The bool type is an arithmetic type used to represent boolean values, which can be either true or false. 
+It is the simplest data type in C++ and is often used to control conditional statements and expressions. 
+The bool type is typically used in conjunction with logical operators and expressions.
+
+Arithmetic Type char
+The char type is an arithmetic type used to represent individual characters. 
+It can store single characters from the basic character set, which includes letters, digits, punctuation, and some special characters. 
+The char type is 8 bits (usually one byte) in size.
+
+Arithmetic Type integer
+The int type is an arithmetic type used to represent integer values. It is one of the fundamental data types used for storing whole numbers. 
+The int type typically has a size of 4 bytes (32 bits) on most systems, but its size can vary depending on the platform.
+
+Arithmetic Type float
+The float type is an arithmetic type used to represent single-precision floating-point numbers. 
+Floating-point numbers are used to represent real numbers with a fractional part. 
+The float type typically uses 32 bits (4 bytes), and typically around 7 decimal places
+
+Function return types
+A function return type specifies the data type of the value that a function will return when it's called.
+    int add(int a, int b) {return a + b; 	// The return type is 'int'}
+    double divide(int a, int b) { return 1.0* a / b;   // The return type is 'double'}
+
+Function passing arguments by value
+When a function passes arguments by value, it makes a copy of the provided values, and any changes made within the function do not affect the original values.
+
+Function Recursion
+Function recursion is when a function calls itself to solve a problem, often breaking it down into smaller subproblems until a base case is reached.
+    int factorial(int n) {
+    if (n <= 1) {
+        	return 1; // Base case
+    }
+    	return n * factorial(n - 1); // Recursive call
+    }
+
+Selection Statement if/else
+The 'if' statement in C++ is used for conditional execution, and 'else' is used to specify an alternative action if the condition in 'if' is not met.
+    if (number > 5) {
+    	cout << "Number is greater than 5." << endl;
+    } else {
+    	cout << "Number is not greater than 5." << endl;
+    }
+
+Iteration Statement while
+The 'while' statement is used in C++ to create a loop that repeatedly executes a block of code as long as a specified condition is true.
+    int count = 0;
+    while (count < 5) {
+    	cout << "Count: " << count << endl;
+    	count++; // Increment count to eventually exit the loop
+    }
+
+Iteration Statement do-while
+The 'do-while' statement is used in C++ to create a loop that first executes a block of code and then checks a specified condition to determine if the loop should continue.
+    int count = 0;
+    do {
+    	cout << "Count: " << count << endl;
+    	count++; 	 // Increment count
+    } while (count < 5); // Condition check comes after the code block
+
+Iteration Statement for
+The 'for' statement in C++ is used for creating loops that repeatedly execute a block of code a specific number of times or iterate over a range of values.
+    for (int i = 0; i < 5; i++) {
+    	cout << "Iteration " << i << endl;
+    }
+In this example, the 'for' loop is used to execute the code block five times, with i starting at 0 and incrementing by 1 in each iteration until i is no longer less than 5.
+

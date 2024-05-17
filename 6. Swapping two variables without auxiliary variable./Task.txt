@@ -1,0 +1,38 @@
+Task Text:
+Complete the C++ function swapWithoutAuxiliary() to swap the values of two signed integer variables without using an auxiliary/help/temporary variable.
+
+Prefilled Answer Field: 
+#include <iostream>
+using namespace std;
+
+
+void swapWithoutAuxiliary(int& num1, int& num2) {
+    
+    //Your Code goes here.
+    
+}
+
+int main() {
+    int num1, num2;
+
+    // Input the values of num1 and num2
+    cout << "Enter the value of num1: ";
+    cin >> num1;
+
+    cout << "Enter the value of num2: ";
+    cin >> num2;
+
+    // Print the initial values
+    cout << "Initial values: num1 = " << num1 << ", num2 = " << num2 << endl;
+
+    // Call the function to swap the values
+    swapWithoutAuxiliary(num1, num2);
+
+    // Print the swapped values
+    cout << "Swapped values: num1 = " << num1 << ", num2 = " << num2 << endl;
+
+    return 0;
+}
+
+
+

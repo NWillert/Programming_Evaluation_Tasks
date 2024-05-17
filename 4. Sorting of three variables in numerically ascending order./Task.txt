@@ -1,0 +1,34 @@
+Task Text:
+Complete the given C++ program so that the three integer variables are sorted and output in ascending order.
+
+Examplary Test Cases: 
+Input: 12 7 5
+Output: 5 7 12
+
+Input: 5 7 12
+Output: 5 7 12
+
+Input: 3 23 14
+Output: 3 14 23
+
+Prefilled Answer Field: 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    
+    cout << "Input: ";
+    cin >> a >> b >> c;
+    
+    
+    //Your code goes here.
+
+    
+    cout << "Output:" << endl; 
+    cout << a << " " << b << " " << c << endl;
+    
+    return 0;
+}
+
+

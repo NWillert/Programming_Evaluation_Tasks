@@ -1,0 +1,50 @@
+1. 
+Abstract parts of the solution:
+Calculate the greatest common divisor (GCD) of the numerator and denominator.
+GCD means that for two or more integer values, the GCD is the largest positive integer that divides each value.
+So for the values 12 and 8, the GCD would be 4.
+Divide both the numerator and denominator by the GCD to simplify the fraction.
+
+Language Constructs needed in a solution or have to be understood:
+Arithmetic operators: /,%
+Assignment operator : = and /=
+Comparison operator: !=
+Interger Datatype and variables
+Function with passing paramaters by value and while-loop
+
+2.
+Here is a detailed Algorithm for the solution:
+Define a function called gcd that takes two integer parameters, 'a' and 'b', and returns the greatest common divisor of 'a' and 'b'.
+Inside the gcd function, set up a while loop that continues as long as 'b' is not equal to 0.
+Within the loop, store the value of 'b' in a temporary variable 'temp', then update 'b' to the remainder of 'a' divided by 'b', and set 'a' to 'temp'.
+After the loop, return the value of 'a' as the greatest common divisor.
+In the main program, create integer variables 'numerator' and 'denominator' to store the user's input values for the numerator and denominator.
+Calculate the GCD of 'numerator' and 'denominator' by calling the gcd function and store the result.
+Divide 'numerator' by the GCD to simplify it.
+Divide 'denominator' by the GCD to simplify it.
+
+3.
+Here is the solution, but you have to bring the statements into the correct order:
+a = temp;  
+denumerator = denumerator/gcd(numerator,denumerator);
+while (b != 0) 
+int gcd(int a, int b) 
+b = a % b; 
+int temp = b; 
+numerator = numerator/gcd(numerator,denumerator);
+return a; 
+
+4.
+Solution:
+int gcd(int a, int b) { 
+  while (b != 0) { 
+  int temp = b; 
+  b = a % b; 
+  a = temp;  
+  }
+return a; 
+}
+
+And in the main:
+numerator = numerator/gcd(numerator,denumerator);
+denumerator = denumerator/gcd(numerator,denumerator);

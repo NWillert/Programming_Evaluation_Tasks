@@ -1,0 +1,76 @@
+1. 
+Abstract parts of the solution:
+Use conditional statements to sort the integers in ascending order by swapping the integers with one another.
+Or you can identify the greatest, middle and smallest value, and then rearrange them.
+
+Language Constructs needed in a solution or have to be understood:
+Assignment Operator: =
+Comparison Operators: ==, !=, <, >, <=, >=
+Integer Datatype, Variables
+Based on the solution, either if/else-statements are needed
+or the use of +,-,*,/,% and the conditional ternary operator
+
+2.
+Here is a detailed Algorithm for the solution:
+To sort the integers in ascending order, you can use conditional statements like if statements.
+First, compare a and b. If a is greater than b, swap their values to make sure a is smaller than or equal to b.
+If a is greater b, swap the values of a and b using a temporary variable
+Next, compare b and c. If b is greater than c, swap their values to ensure b is smaller than or equal to c.
+If b is greater c, swap the values of b and c using a temporary variable
+Finally, recheck a and b to ensure a is still smaller than or equal to b. If not, swap them
+If a is greater b, swap the values of a and b using a temporary variable
+
+Alternatively:
+
+To find the smallest integer, compare a with b and c. If a is smaller than b and c, assign a to the variable "smallest." Otherwise, compare b and c and assign the smaller value to "smallest."
+To find the largest integer, compare a with b and c. If a is greater than b and c, assign a to the variable "largest." Otherwise, compare b and c and assign the greater value to "largest."
+Calculate the middle integer by subtracting the sum of the smallest and largest integers from the sum of all three integers. This can be done as follows: Calculate the sum of a, b, and c and reduce this by the smallest and largest value.
+Now assign a the smallest, b the middle and c the greatest value. 
+
+3.
+Here is the solution, but you have to bring the statements into the correct order:
+int temp = a;
+int temp = b;
+if (a > b) 
+if (a > b) 
+b = temp;
+if (b > c) 
+a = b;
+a = b;
+int temp = a;
+c = temp;
+b = temp; b = c;
+
+Alternatively:
+
+int middle = (a + b + c) - (smallest + largest);
+c = largest;
+int largest = (a > b) ? (a > c ? a : c) : (b > c ? b : c);
+a = smallest; 
+int smallest = (a < b) ? (a < c ? a : c) : (b < c ? b : c);
+b = middle;
+
+4.
+Solution:
+if (a > b) { int temp = a;
+a = b;
+b = temp;
+}
+if (b > c) {
+int temp = b;
+b = c;
+c = temp;
+}
+if (a > b) {
+int temp = a;
+a = b;
+b = temp;
+}
+
+Alternatively:
+
+int smallest = (a < b) ? (a < c ? a : c) : (b < c ? b : c); int largest = (a > b) ? (a > c ? a : c) : (b > c ? b : c);
+int middle = (a + b + c) - (smallest + largest);
+a = smallest;
+b = middle;
+c = largest;

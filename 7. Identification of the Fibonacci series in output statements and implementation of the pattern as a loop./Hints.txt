@@ -1,0 +1,41 @@
+1. 
+Abstract parts of the solution:
+The identifiable pattern is the fibonaci sequence, where each number is the sum of the two preceding ones, starting after a predefined 0 and 1. Then iterate n times over this pattern.
+
+Language Constructs needed in a solution or have to be understood:
+Assignment operator: =
+Arithmetic Operators + and ++
+Comparison operator <
+Stream Output operator <<
+Integer Literals and Variables
+For-Loop
+
+2.
+Here is a detailed Algorithm for the solution:
+Initialize 'a' to 0 and 'b' to 1 to represent the starting values of the sequence.
+Use a 'for' loop to iterate 'n' times, starting from 0 and counting up to 'n - 1'.
+Inside the loop, print the value of 'a' to display the current value in the sequence.
+Calculate the next value in the sequence by adding 'a' and 'b', and store it in a temporary variable called 'next'.
+Update the value of 'a' by setting it equal to the current value of 'b'.
+Update the value of 'b' by setting it equal to the 'next' value, which prepares it for the next iteration.
+Repeat steps 4 to 7 in the loop until 'n' values in the sequence have been printed.
+The program will display the desired sequence based on the identified pattern, as specified by the user.
+
+3.
+Here is the solution, but you have to bring the statements into the correct order:
+a = b;
+int a = 0, b = 1;
+int next = a + b;
+cout << a << endl;
+b = next;
+for (int i = 0; i < n; ++i)
+
+4.
+Solution:
+int a = 0, b = 1;
+    for (int i = 0; i < n; ++i) {
+        cout << a << endl;
+        int next = a + b;
+        a = b;
+        b = next;
+    } 

@@ -1,0 +1,24 @@
+Arithmetic operators +,-,*,/
+Arithmetic operators %
+Bitwise operators &,|,^,<<,>>
+Assignment operators =, +=, -=, *=, /=
+Assignment operators &=, |=, ^=, <<=, >>=
+Increment and Decrement operators ++, --
+Logical operator not !
+Logical operator and &&
+Logical operator or ||
+Comparison operators ==, !=, <, >, <=, >=
+Conditional/ternary operator ? :
+Conversions/Promotions between types
+Identifiers for variables
+Literals of different types (8, 3.41, "string",'c', true)
+Datatype bool, character, integer, float
+Function declaration
+Function return types
+Function return statement
+Function arguments passing them by value
+Function recursion
+Selection statements if/else
+Iteration statement while
+Iteration statement do-while
+Iteration statement for

@@ -1,0 +1,32 @@
+Task Text:
+Given is the following c++ program where a user inputs 1 (for true) or 0 (for false) for every binary value of a byte.
+The bits are entered from the most significant bit to the least significant bit.
+Complete the program so that it outputs the value of the byte as the unsigned integer variable named intValue.
+
+Examplary Test Cases: 
+Input: 0 0 0 0 1 0 0 1
+Output: 9
+
+Input: 0 0 1 0 1 0 1 0
+Output: 42
+
+Prefilled Answer Field: 
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool bit0, bit1, bit2, bit3, bit4, bit5, bit6, bit7;
+    
+    cin >> bit7 >> bit6 >> bit5 >> bit4 >> bit3 >> bit2 >> bit1 >> bit0;
+
+    unsigned short intValue = 0;
+  
+    //Your code goes here
+
+
+    cout << intValue << endl;
+    
+    return 0;
+}
+
+

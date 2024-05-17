@@ -1,0 +1,50 @@
+Task Text:
+Complete the function so that n rows of Pascal's Triangle are generated. 
+You can ignore the leading whitespaces , so the program output should look like this for n = 4:
+
+1
+
+1   1
+
+1   2   1
+
+1   3   3   1
+
+
+As an Example Pascals Triangle with n = 6, where spaces are inserted, so that you can more easily identify the pattern:
+
+           1
+
+         1   1
+
+       1   2   1
+
+     1   3   3   1
+
+   1   4   6   4   1
+
+ 1   5   10  10  5   1
+
+
+Prefilled Answer Field: 
+#include <iostream>
+using namespace std;
+
+void generatePascalsTriangle(int n) {
+
+    // Your code goes here
+
+}
+
+
+int main() {
+    int n;
+    cout << "Enter the number of rows for Pascal's Triangle: \n";
+    cin >> n;
+    
+    generatePascalsTriangle(n);
+    
+    return 0;
+}
+
+

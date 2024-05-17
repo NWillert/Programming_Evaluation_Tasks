@@ -1,0 +1,32 @@
+Task Text:
+Given is the following C++ program that reads in the numerator and denominator of a fraction as two int variables.
+Implement the program parts between the input and output so that the entered fraction is reduced. 
+A reduced fraction means that the fraction 2/4 is reduced to 1/2
+
+Examplary Test Cases: 
+Input: 12 4
+Output: Reduced: 3/1
+
+Input: 5 25
+Output: Reduced: 1/5
+	
+Input: 348 100
+Output: Reduced: 87/25
+
+Prefilled Answer Field: 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numerator, denominator;
+    cin >> numerator;
+    cin >> denominator;
+
+
+    //Your code goes here, and perhaps above the main-function
+
+
+    cout << "Reduced: " << numerator << "/" << denominator << endl;
+
+    return 0;
+}

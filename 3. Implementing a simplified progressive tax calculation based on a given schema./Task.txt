@@ -1,0 +1,44 @@
+Task Text:
+Given are the following rules for a progressive income tax based on the monthly salary:
+From 0.00 € up to and including 1000.00 € no tax has to be payed. 
+For the amount exceeding 1000.00€, from 1000.01 € up to and including 4500.00 €, 18% has to be payed. 
+For the part of the salary exceeding 4500.00€, a tax rate of 32% applies.
+Complete the function calculateTax() so that it returns the amount of progressive income tax to be payed.
+The €-sign can be ignored in the calculation.
+
+Examplary Test Cases: 
+Input: 643.00
+Output: 0
+
+Input: 1500.00
+Output: 90
+
+Input: 5000.00
+Output: 790
+
+Prefilled Answer Field: 
+#include <iostream>
+using namespace std;
+
+double calculateTax(double salary) {
+
+    //Your code goes here
+
+}
+
+int main() {
+    double salary;
+
+    cout << "Enter salary: ";
+    cin >> salary;
+
+    double tax { calculateTax(salary) };
+
+    cout << "Tax Amount: "
+         << tax << endl;
+
+    return 0;
+}
+
+
+

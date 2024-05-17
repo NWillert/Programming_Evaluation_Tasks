@@ -1,0 +1,46 @@
+Task Text:
+Given are the following expressions.
+cout << 0 << endl;
+
+cout << 1 << endl;
+
+cout << 0 + 1 << endl; 
+
+cout << 1 + 1 << endl; 
+
+cout << 1 + 2 << endl; 
+
+cout << 2 + 3 << endl; 
+
+cout << 3 + 5 << endl; 
+
+cout << 5 + 8 << endl; 
+
+Identify underlying pattern in these expressions.
+Create a loop that calculates and displays a sequence of that pattern up to a number of values specified by the user. 
+
+Examplary Test Cases: 
+Input: 5
+
+Output: 
+0
+1
+1
+2
+3
+
+Prefilled Answer Field: 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the value of n: ";
+    cin >> n;
+    
+    
+    //Your code goes here.
+
+    
+    return 0;
+}

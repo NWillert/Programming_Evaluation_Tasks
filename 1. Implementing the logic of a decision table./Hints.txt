@@ -1,0 +1,46 @@
+1. 
+Abstract parts of the solution:
+Implement the decision logic based on the given decision table to determine the corresponding action.
+For each rule you can implement a separate condition.
+Display the result (action) based on the condition to the user.
+
+Language Constructs needed in a solution or have to be understood:
+Logic operators: !, &&, || and the stream output operator <<
+Boolean datatype, the use of variables, Expressions if/else-statements 
+
+2.
+Here is a detailed Algorithm for the solution:
+If inStock, completedDetails, and isCreditworthy are all true, output "Action: Delivery with invoice."
+If inStock and completedDetails are true, but isCreditworthy is false, output "Action: Delivery by cash on delivery."
+If inStock is true, completedDetails is false, and isCreditworthy is true, output "Action: Complete the details."
+If inStock is true, but both completedDetails and isCreditworthy are false, output "Action: Complete the details."
+If none of the above conditions are met, output "Action: Inform: Not deliverable."
+Display the result (the determined action) to the user based on the decision logic.
+This will provide clear guidance on what action should be taken in the given scenario.
+
+
+3.
+Here is the solution, but you have to bring the statements into the correct order and add Braces {}:
+cout << "Action: Complete the details" << endl;
+cout << "Action: Delivery by cash on delivery" << endl;
+cout << "Action: Inform: Not deliverable" << endl;
+else if (inStock && !completedDetails && isCreditworthy) 
+else if (inStock && !completedDetails && !isCreditworthy)
+else 
+else if (inStock && completedDetails && !isCreditworthy) 
+cout << "Action: Delivery with invoice" << endl;
+if (inStock && completedDetails && isCreditworthy) 
+cout << "Action: Complete the details" << endl; 
+
+4. 
+if (inStock && completedDetails && isCreditworthy) {
+        cout << "Action: Delivery with invoice" << endl;
+    } else if (inStock && completedDetails && !isCreditworthy) {
+        cout << "Action: Delivery by cash on delivery" << endl;
+    } else if (inStock && !completedDetails && isCreditworthy) {
+        cout << "Action: Complete the details" << endl;
+    } else if (inStock && !completedDetails && !isCreditworthy) {
+        cout << "Action: Complete the details" << endl; 
+    } else {
+        cout << "Action: Inform: Not deliverable" << endl; 
+    } 

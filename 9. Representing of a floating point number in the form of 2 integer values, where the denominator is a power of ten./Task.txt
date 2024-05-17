@@ -1,0 +1,35 @@
+Task Text:
+Given is the C++ program where the user enters a floating point number of type double.
+Complete the program so that it outputs the closest approximation as a fraction of two integers, where the denominator is a power of 10. 
+The program does only need to be working for up to 7 decimal places. 
+
+Examplary Test Cases: 
+Input: 56
+Output: 56/1
+
+Input: 56.2
+Output: 562/10
+
+Input: 55.31
+Output: 5531/100
+
+Input: 17.123
+Output: 17123/1000
+
+Prefilled Answer Field: 
+#include <iostream>
+using namespace std;
+
+int main() {
+    double var;
+    cin >> var;
+
+    
+    //Your code goes here, and can be above the main function.
+
+
+    return 0;
+}
+
+
+

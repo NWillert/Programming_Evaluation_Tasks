@@ -1,0 +1,42 @@
+1. 
+Abstract parts of the solution:
+Check the value of salary.
+Based on the different ranges use conditions for the different ranges to calculate and return the tax amount.
+Keep in mind that for one salary, multiple tax rates might need to be applied at the same time.
+
+Language Constructs needed in a solution or have to be understood:
+Binary Arithmetic Operators : +,-,*,/
+Comparison Operators: ==, !=, <, >, <=, >=
+Floating Point Literals
+if/else-statements
+return-statements of functions 
+
+2.
+Here is a detailed Algorithm for the solution:
+First, we check if the salary is less than or equal to 1000.00 €. If it is, there is no tax to be paid, so we return 0.00 €.
+If the salary is greater than 1000.00 €, we proceed to the next step and check if it is less than or equal to 4500.00 €.
+If the salary falls between 1000.01 € and 4500.00 €, we calculate the tax amount using an 18% tax rate on the portion of the salary that exceeds 1000.00 €. This is done by subtracting 1000.00 € from the salary and then multiplying the result by 0.18 (18%).
+If the salary is greater than 4500.00 €, we calculate the tax amount using a 32% tax rate on the portion of the salary that exceeds 4500.00 €. In this case, we add the taxes calculated in the previous steps.
+Finally, we return the total calculated tax amount.
+
+3.
+Here is the solution, but you have to bring the statements into the correct order and add Braces{}:
+return 0.00;
+else if (salary <= 4500.00)
+return 3500.00 * 0.18 + (salary - 4500.00) * 0.32;
+return (salary - 1000.00) * 0.18;
+else 
+double calculateTax(double salary)
+if (salary <= 1000.00)
+
+4.
+Solution:
+double calculateTax(double salary) {
+    if (salary <= 1000.00) {
+        return 0.00;
+    } else if (salary <= 4500.00) {
+        return (salary - 1000.00) * 0.18;
+    } else {
+        return 3500.00 * 0.18 + (salary - 4500.00) * 0.32;
+    }
+} 

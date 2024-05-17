@@ -1,0 +1,71 @@
+1. 
+Abstract parts of the solution:
+NOT Operator
+!true = false
+!false = true
+
+AND Operator
+true & true = true
+true & false = false
+false & true = false
+false & false = false
+
+OR Operator
+true OR true = true
+true OR false = true
+false OR true = true
+false OR false = false
+
+NAND Operator
+true NAND true = false
+true NAND false = true
+false NAND true = true
+false NAND false = true
+
+XOR Operator
+true XOR true = false
+true XOR false = true
+false XOR true = true
+false XOR false = false
+
+Language Constructs needed in a solution or have to be understood:
+Logical operators: & and !
+Boolean Datatype variables and functions
+Function return types and passing arguments by value.
+
+2.
+Here is a detailed Algorithm for the solution:
+For the m_or function:
+To mimic the logical OR operation, apply the NOT operator (!) to both a and b.
+Use the AND operator (&) to combine the results of the two NOT operations.
+Invert this result again with NOT
+Return the result, which represents the logical OR of the input values.
+
+For the m_nand function:
+To mimic the logical NAND operation, use the AND operator (&) directly on a and b.
+Apply the NOT operator (!) to the result of the AND operation.
+Return the inverted result, which represents the logical NAND of the input values.
+
+For the m_xor function:
+To mimic the logical XOR operation, use the m_or function to compute the logical OR of a and b.
+Use the m_nand function to compute the logical NAND of a and b.
+Apply the AND operator (&) to the results of the m_or and m_nand functions.
+Return the result, which represents the logical XOR of the input values by combining the OR and NAND operations.
+
+3.
+Here is the solution, but you have to bring the statements into the correct order and add the correct braces {}:
+return !(!a & !b);
+return !(a&b);
+return m_or(a, b) & m_nand(a, b);
+
+4. 
+Solution:
+bool m_or(bool a, bool b) {
+return !(!a & !b);
+}
+bool m_nand(bool a, bool b) {
+return !(a&b);
+}
+bool m_xor(bool a, bool b) {
+return m_or(a, b) & m_nand(a, b);
+} 
