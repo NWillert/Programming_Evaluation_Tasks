@@ -1,5 +1,7 @@
 # Programming_Evaluation_Tasks
 
+This repository provides the accompanying material for an currently unpublished publication by Nico Willert
+
 Programming Concepts as Knowledge Components for students self-assessment
 - List of all components necessary for the programming tasks. 
 - Students can report which components they are familiar with and which are unknown.
